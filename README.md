@@ -12,3 +12,8 @@ A carousel (or slider) displaying new products.
 Footer: This section contains helpful links, contact information, social media icons, a newsletter signup form, and copyright information.
 
 The document also links to several CSS stylesheets for styling the webpage and JavaScript files for adding interactivity to the webpage. The Font Awesome library is used for displaying icons, and the Glide.js library is used for the product carousel.
+
+How to instal:
+$ git clone https://github.com/xhoiKabashi/Shero-FE-Test.git
+$ cd Shero-FE-Test
+$ code .
