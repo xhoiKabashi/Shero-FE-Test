@@ -1,0 +1,29 @@
+.hidden {
+  display: none;
+}
+.secondary-navbar {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+  }
+
+  .input {
+    display: none;
+  }
+  .search-bar,
+  .search,
+  .on-mobile {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+  }
+  .secondary-navbar {
+    display: none;
+  }
+}

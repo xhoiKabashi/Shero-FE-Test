@@ -1,3 +1,4 @@
+// add/remove active class to the nav bar anchors  when clicking
 document.querySelectorAll(".navbar a").forEach((item) => {
   item.addEventListener("click", (event) => {
     // Remove active class from all items
@@ -9,7 +10,7 @@ document.querySelectorAll(".navbar a").forEach((item) => {
   });
 });
 //
-
+//  add carrusel from  library  https://glidejs.com/
 document.addEventListener("DOMContentLoaded", function () {
   new Glide(".glide", {
     type: "carousel",
@@ -20,9 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
       1024: {
         perView: 3,
       },
-      600: {
+      720: {
         perView: 2,
       },
+    },
+
+    pagination: {
+      el: ".glide__bullets",
+      clickable: true,
     },
   }).mount();
 });

@@ -1,12 +1,16 @@
+/* add color variables */
 :root {
-  --grey-100: #eeeeee; /* Blue */
-
-  --grey-900: #5e5e5e; /* Blue */
+  --grey-100: #eeeeee;
+  --grey-200: #f9f9f9;
+  --grey-300: #f0efef;
+  --grey-900: #5e5e5e;
+  --white: #fff;
 
   --blue-900: #1a355c;
   --blue-500: #3073c5;
   --seconday-text: #5e5e5e;
   --main-text: #2f2f2f;
+  --btn-color: #407ec9;
 }
 * {
   box-sizing: border-box;
@@ -57,5 +61,27 @@
   font-size: 10px;
   gap: 5px;
 }
+.card-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  padding: 0 40px;
+  font-weight: 600;
+  color: var(--seconday-text);
+  text-transform: uppercase;
+  font-size: 10px;
+  gap: 5px;
+}
 
+.blue {
+  color: var(--blue-500);
+}
 /* CSS for tablet devices */
+
+@media (max-width: 767px) {
+  .container {
+    width: 99%;
+  }
+}

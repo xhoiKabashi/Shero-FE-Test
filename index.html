@@ -13,12 +13,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
     />
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./header.css" />
-    <link rel="stylesheet" href="./footer.css" />
-    <link rel="stylesheet" href="./body-level-one.css" />
-    <link rel="stylesheet" href="./body-level-two.css" />
-    <link rel="stylesheet" href="./carrusel.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/header-responsive.css" />
+
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/footer-responsive.css" />
+
+    <link rel="stylesheet" href="./css/body-level-one.css" />
+    <link rel="stylesheet" href="./css/body-level-two.css" />
+    <link rel="stylesheet" href="./css/body-responsive.css" />
+
+    <link rel="stylesheet" href="./css/carrusel.css" />
 
     <title>PP</title>
   </head>
@@ -28,9 +34,12 @@
     <header>
       <!-- Navbar -->
       <nav class="navbar flex">
-        <a href="#" class="anchor">Wholesale - Pros Only</a>
-        <a href="#" class="anchor">Retail</a>
-        <div class="flex">
+        <div class="pointer hidden blue">
+          <p>PainfulPleasures</p>
+        </div>
+        <a href="#" class="anchor on-mobile">Wholesale - Pros Only</a>
+        <a href="#" class="anchor on-mobile">Retail</a>
+        <div class="flex search-bar">
           <!-- Search input -->
           <input
             type="text"
@@ -42,27 +51,31 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
         </div>
-        <a href="#" class="anchor"> Community</a>
+        <a href="#" class="anchor on-mobile"> Community</a>
 
         <div a href="#" id="community " class="flex pointer">
           <!-- User account Icon -->
           <i class="fa-solid fa-circle-user"></i>
-          <p>Account</p>
+          <p class="on-mobile">Account</p>
           <!-- Arrow Down Icon -->
-          <i class="fa-solid fa-chevron-down"></i>
+          <i class="fa-solid fa-chevron-down on-mobile"></i>
         </div>
 
         <div class="flex pointer">
           <!-- Cart Icon -->
           <i class="fa-solid fa-cart-shopping"></i>
-          <p>Cart</p>
+          <p class="on-mobile">Cart</p>
           <!-- Arrow Down Icon -->
-          <i class="fa-solid fa-chevron-down"></i>
+          <i class="fa-solid fa-chevron-down on-mobile"></i>
+        </div>
+        <div class="pointer hidden">
+          <i class="fa-solid fa-bars hidden"></i>
+          <!-- Arrow Down Icon -->
         </div>
       </nav>
     </header>
     <!-- Secondary Navbar  -->
-    <nav class="secondary-navbar flex">
+    <nav class="secondary-navbar on-mobile">
       <div class="flex pointer logo">
         <p>PainfulPleasures</p>
       </div>
@@ -91,6 +104,7 @@
         <i class="fa-solid fa-chevron-down"></i>
       </div>
     </nav>
+
     <!-- Body Section -->
     <!-- Level one  body section -->
     <section class="grid-parent container">
@@ -120,8 +134,8 @@
       </div>
     </section>
     <!-- User can add this own images -->
-    <section class="container flex-container-one">
-      <div class="div5 card-one">
+    <section class="flex-container-one">
+      <div class="card-one">
         <h1>
           Tatto <br />
           supplies
@@ -130,7 +144,7 @@
         loading="lazy" />
         <button class="btn-one">Shop Now</button>
       </div>
-      <div class="div6 card-one">
+      <div class="card-one">
         <h1>
           Body <br />
           Jewelry
@@ -143,7 +157,7 @@
         />
         <button class="btn-one">Shop Now</button>
       </div>
-      <div class="div7 card-one">
+      <div class="card-one">
         <h1>
           piercing <br />
           supplies
@@ -156,7 +170,7 @@
         />
         <button class="btn-one">Shop Now</button>
       </div>
-      <div class="div8 card-one">
+      <div class="card-one">
         <h1>
           Medical <br />
           supplies
@@ -169,7 +183,7 @@
         />
         <button class="btn-one">Shop Now</button>
       </div>
-      <div class="div9 card-one">
+      <div class="card-one">
         <h1>
           Premament <br />
           Makeup
@@ -183,12 +197,11 @@
         <button class="btn-one">Shop Now</button>
       </div>
     </section>
-
     <!-- Level one  body section -->
     <section class="container flex-container">
       <h3>From Our Community</h3>
-      <div class="flex">
-        <div class="card-one">
+      <div class="flex-wrap">
+        <div class="card-two">
           <div>
             <img
               src="./public/crew.jpg"
@@ -205,7 +218,7 @@
             on hard work and evolution with tattoo artists autumn Hudson
           </h4>
         </div>
-        <div class="card-one">
+        <div class="card-two">
           <div>
             <img
               src="./public/crew.jpg"
@@ -219,7 +232,7 @@
             on hard work and evolution with tattoo artists autumn Hudson
           </h4>
         </div>
-        <div class="card-one">
+        <div class="card-two">
           <div>
             <img
               src="./public/crew.jpg"
@@ -334,7 +347,7 @@
         </div>
       </section>
     </div>
-
+    <!-- Footer Section -->
     <footer class="footer">
       <div class="footer-content">
         <!-- Top side of footer -->
