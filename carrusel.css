@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 320px;
+  text-align: center;
+  padding: 4px;
+}
+
+.glide {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.card__content > p {
+  font-size: small;
+}
+.card__content > h3 {
+  font-size: medium;
+  color: var(--blue-500);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card__text {
+  margin: 10px 0 0;
+  color: #666;
+}
+
+.glide__arrow {
+  margin: 0 auto;
+  background-color: var(--seconday-text);
+  border-radius: 100%;
+}

@@ -1,66 +1,91 @@
-
 /* Add a classes for the footer */
 .footer {
-    background-color: rgb(117, 117, 240);
-    width: 100%;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-  }
-  .top-footer {
-    border-bottom: 0.5px white  solid;
-    padding: 24px 0 15px 0;
-    width: 100%;
-    text-align: center;
-  }
-  .top-footer > i {
-    font-size: 30px;
-    padding-bottom: 24px;
-  }
-  
-  .middle-footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 24px 0;
-      gap: 120px;
-      align-items: flex-start; 
-  }
-  
-  .title {
-      font-weight: 600;
-      text-transform: uppercase;
-      padding-bottom: 24px
-  }
-  
-  .middle-footer > ul > li {
-      cursor: pointer;
-      padding-bottom: 8px; 
-  }
-  .newsletter {
-      align-items: start;
-  }
-  
-  .newsletter > div > input {
-      padding: 5px 10px;
-      border: 1px solid transparent;
-  }
-  .newsletter > div > input:focus {
-      outline: none; 
-    
-  }
-  .sub-btn {
-      position: relative;
-      right: 15px;
-      background: black;
-      color: white;
-      padding: 5px 10px;
-     
-  }
+  background-color: var(--blue-500);
+  width: 100%;
+  color: white;
+  bottom: 0;
+  left: 0;
+  font-size: small;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.top-footer {
+  border-bottom: 0.5px white solid;
+  padding: 24px 0 15px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  color: var(--blue-500);
+  font-weight: 800;
+  font-style: italic;
+}
+.top-footer > i {
+  font-size: 30px;
+  padding-bottom: 24px;
+}
+
+.middle-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  gap: 120px;
+  align-items: flex-start;
+}
+
+.title {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
+
+.middle-footer > ul > li {
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+.newsletter {
+  align-items: start;
+}
+
+.newsletter > div > input {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+}
+.newsletter > div > input:focus {
+  outline: none;
+}
+.sub-btn {
+  position: relative;
+  right: 15px;
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+}
+
+/* Boottom Footer */
+.bottom-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 10px 0;
+  text-align: center;
+  gap: 4px;
+  background: var(--blue-900);
+  font-size: smaller;
+}
+.bottom-footer > div {
+  padding: 8px;
+}
+
+.social {
+  gap: 10px;
+  font-size: larger;
+}

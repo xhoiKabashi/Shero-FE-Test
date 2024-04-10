@@ -1,59 +1,81 @@
 /* header , navbar */
+
 header {
-    background-color: #f0efef;
-    height: 43px;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    box-sizing: border-box;
-  }
+  background-color: #f0efef;
+  height: 43px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+}
 .navbar {
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 77%;
-    margin: 0 auto;
-    font-size: smaller;
-  }
-  .left-nav {
-    gap: 15px;
-  }
-  
-  .active-item {
-    background-color: white;
-    color: blue;
-    border-top: blue 2px solid;
-    padding: 0 12px 0 12px;
-  }
-  
-  .input {
-    padding: 9px;
-    width: 350px;
-    border: 1px blue solid;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    font-size: 10px; /* Adjust the font size as needed */
-    text-align: center;
-  }
-  .search {
-    background: blue;
-    position: relative;
-    color: white;
-    right: 20px;
-    padding: 8px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-  }
-  
-  .right-nav {
-    color: black;
-    font-weight: 600;
-    gap: 30px;
-  }
-  .right-nav > div {
-    cursor: pointer;
-  }
-  .right-nav i {
-    font-size: 11px;
-  }
-  
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 69%;
+  margin: 0 auto;
+  font-size: smaller;
+}
+
+.secondary-navbar {
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 69%;
+  margin: 0 auto;
+  background-color: #ffff;
+  height: 43px;
+  border-bottom: 1px solid var(--grey-500);
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--seconday-text);
+}
+
+.secondar-navbar > p {
+  font-size: 10px;
+}
+
+.input {
+  padding: 8px;
+  width: 350px;
+  border: 1px #1a355c solid;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 10px;
+  text-align: center;
+}
+.search {
+  background: #1a355c;
+  position: relative;
+  color: white;
+  right: 20px;
+  padding: 6.5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/*  nav02 */
+
+.anchor {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-width: 90px;
+  padding: 0 10px;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-item {
+  border-top: 2px solid var(--blue-500);
+  color: var(--blue-500);
+  background: #ffff;
+}
+
+.fa-chevron-down {
+  font-size: 7px;
+}
+/*  */

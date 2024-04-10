@@ -1,0 +1,41 @@
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, 220px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 10px;
+  padding: 15px;
+}
+
+.grid-parent > .div1,
+.grid-parent > .div2,
+.grid-parent > .div3,
+.grid-parent > .div4 {
+  background-image: url("./public/dummy-placeholder.png");
+  background-position: center;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 4;
+}
+.div2 {
+  grid-area: 1 / 4 / 2 / 6;
+}
+
+.div3 {
+  grid-area: 2 / 4 / 3 / 6;
+}
+
+.btn-one {
+  background-color: #407ec9;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+}
+
+.flex-container-one {
+  display: flex;
+  justify-content: center;
+  height: 220px;
+}
