@@ -13,7 +13,7 @@ Footer: This section contains helpful links, contact information, social media i
 
 The document also links to several CSS stylesheets for styling the webpage and JavaScript files for adding interactivity to the webpage. The Font Awesome library is used for displaying icons, and the Glide.js library is used for the product carousel.
 
-How to instal:
+How to install:
 
 $ git clone https://github.com/xhoiKabashi/Shero-FE-Test.git
 
