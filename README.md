@@ -1,3 +1,5 @@
+Live Preview: https://xhoikabashi.github.io/Shero-FE-Test/
+
 This Page document is structured into three main sections: the header, the body, and the footer.
 
 Header: This section contains the navigation bar, which includes links to different pages such as ‘Wholesale - Pros Only’, ‘Retail’, ‘Community’, ‘Account’, and ‘Cart’. It also includes a search bar for users to search for items or categories.
