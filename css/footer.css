@@ -41,7 +41,7 @@
 .middle-footer {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 24px 0 25px 5px;
   gap: 120px;
   align-items: flex-start;
 }

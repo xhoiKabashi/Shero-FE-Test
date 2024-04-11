@@ -13,7 +13,7 @@
 .grid-parent > .div2,
 .grid-parent > .div3,
 .grid-parent > .div4 {
-  background-image: url("./public/dummy-placeholder.png");
+  background-image: url("../public/dummy-placeholder.png");
   background-position: center;
 }
 
